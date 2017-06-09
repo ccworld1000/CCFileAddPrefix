@@ -21,7 +21,7 @@ if (defined ($prefix)) {
     
     #say @files;
     
-    my $year_month_day=strftime("%Y%m%d",localtime());
+    my $year_month_day=strftime("%Y%m%d%M%S",localtime());
     
     my $handleDir = "${prefix}_${year_month_day}";
     say "mkdir $handleDir";
